@@ -7,10 +7,10 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/todolist/todolist",
-      "text": "Todo"
+      "text": "待办理"
     }, {
       "pagePath": "pages/logs/logs",
-      "text": "日志"
+      "text": "已完成"
     }]
   },
 

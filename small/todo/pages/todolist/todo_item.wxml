@@ -1,0 +1,5 @@
+<template name="todo_item">
+    <view>
+        <text>{{title}}</text>
+    </view>
+</template>
