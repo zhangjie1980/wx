@@ -35,6 +35,7 @@ Page({
     
     onShow: function() {
         console.log('onShow');
+        this.fetchData();
     },
     
     onHide: function() {
@@ -56,6 +57,27 @@ Page({
         
         this.setData({
             todolist: todolist
+        })
+    },
+    
+    itemClick: function(e) {
+        console.log(e);
+        wx.navigateTo({
+            url: '../todoedit/todoedit?data=' + JSON.stringify(this.data.todolist[e.currentTarget.id]),
+        })
+    },
+    
+    fetchData: function() {
+        wx.request({
+            url: 'https://www.baidu.com',
+            data: {
+                x: '',
+                y: ''
+            },
+            header: {
+            },
+            success: function(res) {
+            }
         })
     }
     

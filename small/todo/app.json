@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/todolist/todolist",
+    "pages/todoedit/todoedit",
     "pages/logs/logs"
   ],
 
