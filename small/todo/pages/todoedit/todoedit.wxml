@@ -1,3 +1,6 @@
 <view>
-    xxx
+    <view class="title">
+        <label>标题</label>
+        <input placeholder="请输入您要办理事项标题" value="{{item.title}}"/>
+    </view>
 </view>

@@ -7,9 +7,9 @@
 <block wx:else>
     <scroll-view class=".scroll" scroll-y="true">
         <view wx:for="{{todolist}}" wx:for-index="idx" wx:for-item="item">
-            <view class="item" id="{{item.id}}" bindtap="itemClick">
+            <view class="item">
                 <checkbox id="{{item.id}}" bindtap="clickButton" checked="{{item.completion}}"/>
-                <text class="title {{item.completion ? 'completion' : null}}">{{item.title}}</text>
+                <text id="{{item.id}}" class="title {{item.completion ? 'completion' : null}}" bindtap="itemClick">{{item.title}}</text>
             </view>
         </view>
     </scroll-view>
